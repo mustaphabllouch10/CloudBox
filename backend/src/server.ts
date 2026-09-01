@@ -1,5 +1,8 @@
-import express from "express";
 import app from "./app";
+
+import testRouter from "./Routes/TestRoutes";
+app.use("/test", testRouter);
+
 
 const PORT = 3000;
 

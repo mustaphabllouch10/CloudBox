@@ -1,6 +1,13 @@
-import app from "../app";
+import { Router } from "express";
 
-app.get("/test", (req, res) => {
+const router = Router();
+
+router.get("/", (req, res) => {
   res.send("Test route is working!");
 });
+router.get("/hello", (req, res) => {
+  res.send("Hello from the test route!");
+});
+
+export default router;
 
